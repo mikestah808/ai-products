@@ -1,9 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { snapshot, useSnapshot } from 'valtio';
-
 import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from '../config/motion';
-
 import state from '../store'
+import { CustomButton } from '../components';
 
 const Home = () => {
     const snap = useSnapshot(state)
@@ -34,6 +33,10 @@ const Home = () => {
                         imagination</strong>{" "}
                         and define your own style.
                         </p>
+
+                        <CustomButton 
+
+                        />
                     </motion.div>
                 </motion.div>
             </motion.section>
